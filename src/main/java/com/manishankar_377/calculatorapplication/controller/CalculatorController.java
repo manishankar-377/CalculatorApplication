@@ -44,7 +44,6 @@ public class CalculatorController {
 
     @PostMapping("/post")
     public String calculate(@RequestBody CalculationRequest request) {
-        System.out.println("Received request: " + request);
 
         if (request == null || request.getOperator() == null) {
             return "Error: Invalid request or operator is missing.";
