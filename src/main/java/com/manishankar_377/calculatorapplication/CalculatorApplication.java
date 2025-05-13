@@ -1,4 +1,4 @@
-package com.manishankar_377.CalculatorApplication;
+package com.manishankar_377.calculatorapplication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

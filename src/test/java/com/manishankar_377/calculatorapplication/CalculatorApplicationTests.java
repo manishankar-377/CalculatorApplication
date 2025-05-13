@@ -1,4 +1,4 @@
-package com.manishankar_377.CalculatorApplication;
+package com.manishankar_377.calculatorapplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
