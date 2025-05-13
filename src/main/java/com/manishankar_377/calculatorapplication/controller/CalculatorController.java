@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/calculate")
 public class CalculatorController {
 
-    @GetMapping
+    @GetMapping("/get")
     public String calculate(
             @RequestParam double num1,
             @RequestParam double num2,
@@ -42,7 +42,7 @@ public class CalculatorController {
         return String.valueOf(result);
     }
 
-    @PostMapping
+    @PostMapping("/post")
     public String calculate(@RequestBody CalculationRequest request) {
         System.out.println("Received request: " + request);
 
@@ -65,14 +65,6 @@ public class CalculatorController {
                 break;
             default: return "Error: Invalid operator.";
         }
-
         return String.valueOf(result);
     }
-
-   /* @PostMapping
-    public String calculate(@RequestBody String rawBody) {
-        System.out.println("RAW BODY: " + rawBody);
-        return rawBody;
-    }*/
-
 }
