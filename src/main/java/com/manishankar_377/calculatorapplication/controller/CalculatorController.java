@@ -3,6 +3,7 @@ package com.manishankar_377.calculatorapplication.controller;
 import com.manishankar_377.calculatorapplication.model.CalculationRequest;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 @RequestMapping("/calculate")
 public class CalculatorController {
