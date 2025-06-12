@@ -59,6 +59,7 @@ public class CalculatorControllerTest {
         request.setNum2(3.0);
         request.setOperator("*");
 
+
         // Call the calculate method
         String result = new CalculatorController().calculate(request);
 
